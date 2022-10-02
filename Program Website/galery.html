@@ -1,0 +1,49 @@
+<html> 
+    <head>
+        <title>Latihan/Tugas Pertemuan 2</title>
+    </head>
+<alert> Selamat Datang </alert>
+<body bgcolor="black"text="white">
+    <center>
+    <h1>Ridho Hafizh Maulana - 201011401420</h1>
+    <h3>Tugas Pemrograman Web Pertemuan 4</h3>
+    <p>Memasukkan video, foto dan audio</p>
+    <p>========================================================</p>
+    </center>
+<div style="text-align:center"> 
+    <p>1. Video</p>
+    <video id="videoku" width="640">
+ <source src="VID-20220808-WA0045.mp4" type="video/mp4">
+ </video>
+ <br><br>
+ <button onclick="tekanPause()">Play/Pause</button> 
+ <button onclick="menjadiBig()">Big</button>
+ <button onclick="menjadiSmall()">Small</button>
+ <button onclick="menjadiNormal()">Normal</button>
+ <br><br>
+ <p>2. Foto</p>
+ <img src="C:\Users\Ridho Hafizh Maulana\OneDrive\Dokumen\Pemograman web 1\PERTEMUAN 5\Program Website\IMG_20220806_041435_668.jpg" width="700" height="600" Align="center">
+ <br>
+ <p>3. Audio</p>
+ <embed src="Official-Video-Live-CLOSEHEAD-BERDIRI-TEMAN-LIVE-AT-ICC-SHOWCASE-SURABAYA-HQ_KiB7S1IL72o.mp3"></embed>
+</div> 
+<script> 
+var VideoAku = document.getElementById("videoku"); 
+function tekanPause() { 
+ if (VideoAku.paused) 
+ VideoAku.play(); 
+ else 
+ VideoAku.pause(); 
+} 
+function menjadiBig() { 
+ VideoAku.width = 700; 
+} 
+function menjadiSmall() { 
+ VideoAku.width = 320; 
+} 
+function menjadiNormal() { 
+ VideoAku.width = 430; 
+} 
+</script> 
+</body> 
+</html>
